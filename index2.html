@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>深海</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fuwaimg.css">
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> <!-- CreateJSのライブラリー読み込み -->
+  <script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script> <!-- ParticleJSのライブラリー読み込み -->
+  <script src="js/jquery.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/rellax.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li><a href="#first">about</a></li>
+            <li><a href="#me">me</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="top"> <!-- id="top"は変えないでください！デザインが崩れます -->
+    <div class="rellax base">
+      <div class="title">
+        <h1>深海</h1>
+        <p>簡単な説明</p>
+      </div>
+    </div>
+    <div class="rellax front center" data-rellax-speed="6">
+      <canvas width="1400" height="800" id="myCanvas"></canvas>
+    </div>
+    <div class="rellax back" data-rellax-speed="4">
+      <div class="center full">
+        <img src="img/top.png">
+      </div>
+    </div>
+    <div class="rellax deep fix-80 only-pc" data-rellax-speed="-2">
+      <div class="right half">
+        <img src="img/fish.png">
+      </div>
+      <div class="left half">
+        <img src="img/fish.png">
+      </div>
+    </div>
+  </section>
+
+<section id="first"> <!-- id="first"は変えないでください！デザインが崩れます -->
+
+    <a href="#first"><i class="fas fa-angle-down"></i></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" class="center">
+
+          <h2 class="center">このテンプレートについて</h2>
+          <p class="center">パララックス（視差）効果を使った、<br>
+            奥行きのあるリッチなデザイン。<br>
+            特徴的な動きが目を引くため、<br>
+            イベント告知や企画、イラストサイト、<br>
+            ポートフォリオサイトなどに向いています。</p>
+          <p class="center">スクロールするにつれ、どんどんと<br>
+            深い海に潜っていくかのような色使いで<br>
+            ストーリー性のあるデザインです。</p>
+          <p class="center">画像などを使わず、<br>
+            可能な限りCSSやJavascriptで表現しているため<br>
+            サイトの表示も重くなりにくいです。</p>
+
+          <ul class="link-2 center">
+            <li><a href="text.html">文章ページ</a></li>
+            <li><a href="comic.html">漫画展示ページ</a></li>
+            <li><a href="books.html">頒布物一覧ページ</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="me">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <img src="img/top.png">
+        </div>
+
+        <div class="col-md-6">
+          <h3>管理人名</h3>
+          <p>イラストレーターをしています。<br>
+            海をモチーフとしたゆるかわな絵が得意です。<br>
+            <a href="#">→Pixiv</a></p>
+
+          <dl class="flex">
+            <dt>2020.2.1</dt>
+            <dd>イラスト一点</dd>
+            <dt>2020.1.8</dt>
+            <dd>イベントに参加しました</dd>
+            <dt>2019.12.20</dt>
+            <dd>こんなことをしています</dd>
+            <dt>2019.12.1</dt>
+            <dd>あんなことをしました</dd>
+          </dl>
+
+
+          <ul class="sns-list">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-12">
+          <ul class="illust-1">
+            <li><a href="./img/01.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/01-s.jpg"></a></li>
+            <li><a href="./img/02.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/02-s.jpg"></a></li>
+            <li class="new"><a href="./img/03.jpg" data-fimg="illust" data-fcaption="ここに説明" class="fuwaimg"><img src="./img/03-s.jpg"></a></li>
+          </ul>
+
+          <a href="#" class="btn">more</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact"> <!-- id="contact"は変えないでください！デザインが崩れます -->
+    <div class="rellax base" data-rellax-speed="0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" class="center">
+            <h2 class="center">コンタクト</h2>
+            <form method="post" action="ここにアクション" class="mailform">
+              <input type="text" name="message" placeholder="お名前">
+              <input type="mail" name="message" placeholder="メールアドレス">
+              <textarea rows="5" name="message" placeholder="本文"></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rellax deep fix-160" data-rellax-speed="-4">
+      <div class="right half">
+        <img src="img/fish.png">
+      </div>
+      <div class="left half">
+        <img src="img/fish.png">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 center">
+          <a href="index.html"><span class="sitename">ここにサイト名</span></a>
+          <p>since 2020.</p>
+
+          <p>注意書き、SNSボタンなどをここにおいてもOK。</p>
+
+          <ul class="sns-list">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+
+          <p class="bottom"><a href="https://do.gt-gt.org" target="_blank">template by do.</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var rellax = new Rellax(' .rellax ', {
+      // 中央寄せ
+      center: true
+    });
+  </script>
+  <script src="js/scrollbooster.min.js" charset="utf-8"></script>
+<script src="js/fuwaimg.js" charset="utf-8"></script>
+</body>
+
+</html>
