@@ -1142,11 +1142,11 @@ p#fuwaimg_caption_text {
     width: 100%;
     position: absolute;
 }
-.rellax .full .topilust.at {
+.topilust.at {
     background-image: url(../img2/image_013_1.png);
     filter: drop-shadow(0px 0px 3px #27263a);
 }
-.rellax .full .topilust.az {
+.topilust.az {
     background-image: url(../img2/image_013_3.png);
     animation: at 4s ease infinite;
     animation-direction: alternate
@@ -1161,5 +1161,4 @@ p#fuwaimg_caption_text {
     100% {
         opacity: 1
     }
-}
 }
