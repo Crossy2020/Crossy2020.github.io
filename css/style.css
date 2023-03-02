@@ -33,7 +33,7 @@ input {
   変えないほうが無難ですが、編集するときは漏れのないよう気を付けてください
    ========================================== */
 body {
-    background: #313536;
+    background: #27263a;
     font-family: YuGothic, 'Yu Gothic', 'TsukuBRdGothic-Regular', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Cambria Math', 'Avenir', sans-serif;
     padding: 0;
     margin: 0;
@@ -46,7 +46,7 @@ body#text {
     background-attachment: fixed;
 }
 body#text main .container {
-    background: #313536;
+    background: #27263a;
     padding: 30px;
     margin-top: 100px;
 }
@@ -189,7 +189,7 @@ header ul li a {
     display: block;
     padding: 20px;
     color: #c0cccf;
-    text-shadow: 0 1px 10px #313536;
+    text-shadow: 0 1px 10px #27263a;
 }
 header ul li a:hover {
     color: snow;
@@ -220,13 +220,13 @@ section#top {
     }
 }
 section#first {
-    background: #313536;
+    background: #27263a;
     overflow: visible;
 }
 section#first>a {
     display: block;
     text-align: center;
-    background: #313536;
+    background: #27263a;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -255,7 +255,8 @@ section#contact {
     z-index: 1;
     background: #80938d;
     background: -webkit-gradient(linear, left top, left bottom, from(#8c9390), color-stop(53%, #435c5e), to(#285363));
-    background: linear-gradient(180deg, #8c9390 0%, #435c5e 53%, #285363 100%);
+    /*background: linear-gradient(180deg, #8c9390 0%, #435c5e 53%, #285363 100%);*/
+    background: linear-gradient(180deg, #9d6979 0%, #776b89 53%, #88949f 100%);
     border-radius: 50% 50% 0 0 / 30% 30% 0 0;
     padding: 60px 0;
 }
@@ -324,7 +325,7 @@ input[type=submit]:focus {
     left: 0;
     text-align: center;
     color: snow;
-    text-shadow: 0 1px 10px #313536;
+    text-shadow: 0 1px 10px #27263a;
 }
 .title .iicon {
     position: relative;
@@ -350,9 +351,9 @@ input[type=submit]:focus {
     background-color: rgb(0, 0, 0);
     background-size: cover;
     border-radius: 50%;
-    border: solid 4px #313536;
+    border: solid 4px #27263a;
     overflow: hidden;
-    box-shadow: 0 1px 10px #313536;
+    box-shadow: 0 1px 10px #27263a;
 }
 .title h1 {
     font-size: 200%;
@@ -664,7 +665,7 @@ form#dream input[type=submit] {
     display: block;
     margin: 20px auto;
     background: #c0cccf;
-    color: #313536;
+    color: #27263a;
     border: 1px solid #c0cccf;
     border-radius: 4px;
     -webkit-transition: .7s;
@@ -679,7 +680,7 @@ form#dream input[type=submit]:hover {
     cursor: pointer;
 }
 footer {
-    background: #2a2d2e;
+    background: #27263a;
     overflow: hidden;
     padding: 30px 0 0 0;
     margin-bottom: 0;
@@ -1126,4 +1127,39 @@ p#fuwaimg_caption_text {
 }
 #menu-btn-check:checked~.menu-btn div.sharemenu {
     display: block;
+}
+/**/
+.rellax .half img {
+    filter: brightness(1) contrast(.6);
+    opacity: .8
+}
+.rellax .full .topilust {
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -100%;
+    width: 100%;
+    position: absolute;
+}
+.rellax .full .topilust.at {
+    background-image: url(../img2/image_013_1.png);
+    filter: drop-shadow(0px 0px 3px #27263a);
+}
+.rellax .full .topilust.az {
+    background-image: url(../img2/image_013_3.png);
+    animation: at 4s ease infinite;
+    animation-direction: alternate
+}
+@keyframes at {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
 }
