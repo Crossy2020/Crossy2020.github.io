@@ -963,8 +963,11 @@ p#fuwaimg_caption_text {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.parallax_content p{margin: 0;
+.parallax_content p{
+    margin: 0;
     color: #fff;
+    width: 90%;
+    text-align: center;
     font-size: 1.3em;
     position: absolute;
     top: 50%;
