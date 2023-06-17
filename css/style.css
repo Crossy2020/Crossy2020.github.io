@@ -216,7 +216,6 @@ section#top {
     background: radial-gradient(ellipse at center top, #57a4c8 0%, #577d85 56%, #57585c 100%);
     background-image: url(/image/BG.jpg);
     background-size: cover;
-    background-attachment: fixed;
 }
 @media screen and (max-width: 767px) {
     section#top {
@@ -958,7 +957,6 @@ p#fuwaimg_caption_text {
     justify-content: center;
     align-items: center;
     margin: 0 calc(50% - 50vw + 9px);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -966,14 +964,11 @@ p#fuwaimg_caption_text {
 .parallax_content p{
     margin: 0;
     color: #fff;
-    width: 90%;
     text-align: center;
     font-size: 1.3em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit- transform: translateY(-50%) translateX(-50%);
+    top: 42%;
+    width: calc(100vw - 18px);position: absolute;
+    
 }
 .parallax_content a{margin: 0;
     position: absolute;
@@ -1241,11 +1236,11 @@ ul.linkstyle li.x3 {
     transform: translate(-50%, -50%);
 }
 .topilust.at {
-    background-image: url(/image/image_top_11.png);
+    background-image: url(/image/image_top_11.webp);
     filter: drop-shadow(0px 0px 3px #27263a);
 }
 .topilust.az {
-    background-image: url(/image/image_top_12.png);
+    background-image: url(/image/image_top_12.webp);
     animation: at 4s ease infinite;
     animation-direction: alternate
 }
