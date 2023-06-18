@@ -1,4 +1,2 @@
 User-Agent: *
-Disallow: /
-Allow: /card.png
-Allow: /index.html
+Allow: /
