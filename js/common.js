@@ -37,48 +37,47 @@ jQuery(function() {
       // Particle Develop( http://ics-web.jp/projects/particle-develop/ ) から書きだしたパーティクルの設定を読み込む
       particleSystem.importFromJson(
         // パラメーターJSONのコピー＆ペースト ここから--
-        {
-          "bgColor": "transparent",
-          "width": 1400,
-          "height": 600,
-          "emitFrequency": 5,
-          "startX": 385,
-          "startXVariance": 1400,
-          "startY": 169,
-          "startYVariance": 800,
-          "initialDirection": 0,
-          "initialDirectionVariance": 0,
-          "initialSpeed": 0,
-          "initialSpeedVariance": "0.7",
-          "friction": 0.0575,
-          "accelerationSpeed": "0.042",
-          "accelerationDirection": 269.3,
-          "startScale": 0.1,
-          "startScaleVariance": 0.2,
-          "finishScale": "0",
-          "finishScaleVariance": "0.17",
-          "lifeSpan": 1000,
-          "lifeSpanVariance": 100,
-          "startAlpha": "1",
-          "startAlphaVariance": "0.58",
-          "finishAlpha": "0",
-          "finishAlphaVariance": 0.5,
-          "shapeIdList": [
-            "reverse_blur_circle",
-            "circle"
-          ],
-          "startColor": {
-            "hue": "224",
-            "hueVariance": "41",
-            "saturation": "59",
-            "saturationVariance": "0",
-            "luminance": "85",
-            "luminanceVariance": "18"
-          },
-          "blendMode": false,
-          "alphaCurveType": "0",
-          "VERSION": "1.0.0"
-        }
+          {
+              "bgColor": "transparent",
+              "width": 1400,
+              "height": "800",
+              "emitFrequency": 5,
+              "startX": 700,
+              "startXVariance": 600,
+              "startY": 570,
+              "startYVariance": 500,
+              "initialDirection": 270,
+              "initialDirectionVariance": 0,
+              "initialSpeed": 1.9,
+              "initialSpeedVariance": 14.3,
+              "friction": 0.096,
+              "accelerationSpeed": 0.1045,
+              "accelerationDirection": 270,
+              "startScale": 0.3,
+              "startScaleVariance": 0.4,
+              "finishScale": 0.17,
+              "finishScaleVariance": 0,
+              "lifeSpan": 330,
+              "lifeSpanVariance": 370,
+              "startAlpha": 0.81,
+              "startAlphaVariance": 0,
+              "finishAlpha": 0,
+              "finishAlphaVariance": 0,
+              "shapeIdList": [
+                  "square"
+              ],
+              "startColor": {
+                  "hue": 242,
+                  "hueVariance": 25,
+                  "saturation": 23,
+                  "saturationVariance": 7,
+                  "luminance": 31,
+                  "luminanceVariance": 24
+              },
+              "blendMode": false,
+              "alphaCurveType": "0",
+              "VERSION": "1.0.0"
+          }
         // パラメーターJSONのコピー＆ペースト ここまで---
       );
       // フレームレートの設定
