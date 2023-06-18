@@ -961,26 +961,33 @@ p#fuwaimg_caption_text {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.parallax_content .wide{
+.parallax_content .wide {
     margin: 0;
     color: #fff;
-    width: calc(100vw - 18px);position: absolute;
-    
+    width: calc(100vw - 18px);
+    position: absolute;
+    overflow: hidden
 }
-
-.parallax_content p{
-    margin: 0;
+.parallax_content .wide img, .parallax_content .wide .s {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     color: #fff;
     text-align: center;
     font-size: 1.3em;
 }
-.parallax_content a{margin: 0;
+.parallax_content .wide img {
+    object-fit: cover;
+    height: 45%
+}
+.parallax_content a {
+    margin: 0;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
-    
     text-align: center;
     background: #27263a;
     width: 80px;
@@ -1001,7 +1008,6 @@ p#fuwaimg_caption_text {
     -webkit-transition: .7s;
     transition: .7s;
 }
-
 .img_bg_01 {
     background-image: url(/image/BG.jpg);
     background-color: #000
@@ -1259,7 +1265,6 @@ ul.linkstyle li.x3 {
         opacity: 1
     }
 }
-
 .noise:after {
     position: relative;
     display: block;
@@ -1271,16 +1276,13 @@ ul.linkstyle li.x3 {
     animation: noise_anima 1s steps(10) infinite;
     pointer-events: none;
 }
-
 .top_btn_mobile {
     display: none;
 }
-
 @keyframes noise_anima {
     from {
         background-position: 0 0;
     }
-
     to {
         background-position: 123px 456px;
     }
