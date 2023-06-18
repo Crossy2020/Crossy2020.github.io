@@ -962,14 +962,17 @@ p#fuwaimg_caption_text {
     background-repeat: no-repeat;
 }
 .parallax_content .wide{
-    color: #fff
+    margin: 0;
+    color: #fff;
+    width: calc(100vw - 18px);position: absolute;
+    
 }
 
 .parallax_content p{
+    margin: 0;
     color: #fff;
     text-align: center;
     font-size: 1.3em;
-    margin-top: 25vh
 }
 .parallax_content a{margin: 0;
     position: absolute;
